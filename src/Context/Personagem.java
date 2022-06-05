@@ -25,6 +25,18 @@ public abstract class Personagem {
         this.pulo = p;
     }
 
+    public Atacar getAtaque() {
+        return ataque;
+    }
+
+    public Correr getCorrida() {
+        return corrida;
+    }
+
+    public Pular getPulo() {
+        return pulo;
+    }
+
     public int getNivelEnergia() {
         return nivelEnergia;
     }
