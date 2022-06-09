@@ -1,6 +1,5 @@
 package CadeiaEscudos;
 
-import Context.Personagem;
 
 /**
  *
@@ -17,5 +16,5 @@ public abstract class Escudo {
         return this.sucessor;
     }
     
-    public abstract void processaDano(int dano, Personagem personagem);
+    public abstract int processaDano(int dano);
 }

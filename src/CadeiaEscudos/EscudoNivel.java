@@ -19,16 +19,15 @@ public class EscudoNivel extends Escudo {
     }
     
     @Override
-    public void processaDano(int dano, Personagem personagem){
+    public int processaDano(int dano){
         if (getSucessor() == null) {
-            personagem.perdeNivelEnergia(dano - defesa);
-            return;
+            return (dano - defesa);
         }
         
         if (dano <= 0){
-           getSucessor().processaDano(0, personagem);
+           return getSucessor().processaDano(0);
         } else {
-           getSucessor().processaDano(dano - defesa, personagem);
+           return getSucessor().processaDano(dano - defesa);
         }
     }
 }

@@ -69,19 +69,18 @@ public class ProjetoPoo2 {
         Escudo escudoNivel3 = new EscudoNivel(1);
         Escudo escudoNivel4 = new EscudoNivel(3);
         
-        escudoNivel1.setSucessor(escudoNivel2);
-        escudoNivel2.setSucessor(escudoNivel3);
-        escudoNivel3.setSucessor(escudoNivel4);
+        p5.pegaEscudo(escudoNivel1);
+        p5.pegaEscudo(escudoNivel2);
+        p5.pegaEscudo(escudoNivel3);
+        p5.pegaEscudo(escudoNivel4);
         
         System.out.println("\n\nVida antes: "+p5.getNivelEnergia());
-        escudoNivel1.processaDano(20, p5);
+        p5.perdeNivelEnergia(20);
         System.out.println("Vida depois: "+p5.getNivelEnergia());
         
         System.out.println("\n\n");
         
         // Padrão Decorator
-        Atacar ataque1 = new AtaqueForte(); 
-        ataque1 = new Poder1(ataque1);
         
         p1.atacar();
         p1.setAtaque(new Poder1(p1.getAtaque()));
