@@ -3,13 +3,25 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/DecoracaoAtaque/AtaqueDecorator.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/ComportamentosPersonagens/Strategy/Atacar.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/projeto/poo2/ProjetoPoo2.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/ComportamentosPersonagens/ConcreteStrategy/Ataques/AtaqueForte.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/DecoracaoAtaque/Poder1.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/DecoracaoAtaque/Poder2.java</file>
-            <file>file:/C:/Users/Tiago/Documents/COMP/Java/projeto-poo2/src/DecoracaoAtaque/Poder3.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/EstadosPersonagens/EstadoForte.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/Context/Personagem01.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/Context/Personagem04.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/DecoracaoAtaque/Poder2.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/DecoracaoAtaque/Poder3.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/EstadosPersonagens/EstadoPersonagem.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/projeto/poo2/ProjetoPoo2.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/Context/Personagem.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/EstadosPersonagens/EstadoMorto.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/ComportamentosPersonagens/Strategy/Pular.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/Context/Personagem02.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/Context/Personagem03.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/ComportamentosPersonagens/ConcreteStrategy/Pulos/PuloMedio.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/DecoracaoAtaque/Poder1.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/DecoracaoAtaque/AtaqueDecorator.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/EstadosPersonagens/EstadoNormal.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/EstadosPersonagens/EstadoPerigo.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/ComportamentosPersonagens/Strategy/Correr.java</file>
+            <file>file:/home/huryel/Documentos/faculdade/5°%20Período/POO2/projeto-poo2/src/ComportamentosPersonagens/Strategy/Atacar.java</file>
         </group>
     </open-files>
 </project-private>

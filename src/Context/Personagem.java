@@ -6,6 +6,12 @@ import ComportamentosPersonagens.Strategy.Correr;
 import ComportamentosPersonagens.Strategy.Pular;
 import EstadosPersonagens.EstadoPersonagem;
 
+/**
+ *
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
+ */
+
 public abstract class Personagem {
 
     private Atacar ataque;

@@ -9,8 +9,10 @@ import ComportamentosPersonagens.Strategy.Atacar;
 
 /**
  *
- * @author Tiago
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
  */
+
 public class AtaqueDecorator extends Atacar {
     private Atacar ataqueDecorado;
 

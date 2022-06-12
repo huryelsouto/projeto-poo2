@@ -9,8 +9,10 @@ import Context.Personagem;
 
 /**
  *
- * @author Tiago
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
  */
+
 public class EscudoNivel extends Escudo {
     int defesa;
 

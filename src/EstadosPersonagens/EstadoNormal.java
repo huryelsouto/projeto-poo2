@@ -4,6 +4,12 @@ import ComportamentosPersonagens.ConcreteStrategy.Ataques.AtaqueMedio;
 import ComportamentosPersonagens.ConcreteStrategy.Corridas.CorridaMedia;
 import Context.Personagem;
 
+/**
+ *
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
+ */
+
 public class EstadoNormal extends EstadoPersonagem {
 
     public EstadoNormal(Personagem per) {

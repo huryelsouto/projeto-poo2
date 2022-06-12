@@ -2,6 +2,12 @@ package EstadosPersonagens;
 
 import Context.Personagem;
 
+/**
+ *
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
+ */
+
 public abstract class EstadoPersonagem {
 
     private Personagem personagem;

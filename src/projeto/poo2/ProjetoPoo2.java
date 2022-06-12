@@ -11,6 +11,12 @@ import Context.Personagem03;
 import Context.Personagem04;
 import DecoracaoAtaque.*;
 
+/**
+ *
+ * Huryel Souto Costa - 12011BCC022
+ * Tiago da Silva e Souza Pinto - 12011BCC001
+ */
+
 public class ProjetoPoo2 {
 
     public static void main(String[] args) {
