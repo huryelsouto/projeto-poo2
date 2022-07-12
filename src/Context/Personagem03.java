@@ -12,8 +12,8 @@ import ComportamentosPersonagens.ConcreteStrategy.Pulos.PuloBaixo;
 
 public class Personagem03 extends Personagem{
     public Personagem03(){
-        this.setPulo(new PuloBaixo());
-        this.setCorrida(new CorridaRapida());
-        this.setAtaque(new AtaqueForte());
+        this.setPulo(PuloBaixo.getInstancia());
+        this.setCorrida(CorridaRapida.getInstancia());
+        this.setAtaque(AtaqueForte.getInstancia());
     }
 }

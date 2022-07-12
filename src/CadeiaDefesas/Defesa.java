@@ -1,4 +1,4 @@
-package CadeiaEscudos;
+package CadeiaDefesas;
 
 /**
  *
@@ -6,14 +6,14 @@ package CadeiaEscudos;
  * Tiago da Silva e Souza Pinto - 12011BCC001
  */
 
-public abstract class Escudo {
-    private Escudo sucessor;
+public abstract class Defesa {
+    private Defesa sucessor;
 
-    public void setSucessor(Escudo sucessor) {
+    public void setSucessor(Defesa sucessor) {
         this.sucessor = sucessor;
     }
 
-    public Escudo getSucessor(){
+    public Defesa getSucessor(){
         return this.sucessor;
     }
     

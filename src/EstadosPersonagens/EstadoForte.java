@@ -14,9 +14,8 @@ public class EstadoForte extends EstadoPersonagem{
     
     public EstadoForte(Personagem per){
         super(per);
-        this.getPersonagem().setAtaque(new AtaqueForte());
-        this.getPersonagem().setCorrida(new CorridaRapida());
-        
+        this.getPersonagem().setAtaque(AtaqueForte.getInstancia());
+        this.getPersonagem().setCorrida(CorridaRapida.getInstancia());
     }
     
     @Override
@@ -27,7 +26,7 @@ public class EstadoForte extends EstadoPersonagem{
 
     @Override
     public void verificarAlteracaoEstado() {
-        if(this.getPersonagem().getNivelEnergia() < this.getLimiteInferior()){
+        if (this.getPersonagem().getNivelEnergia() < this.getLimiteInferior()) {
             this.getPersonagem().setEstado(new EstadoNormal(this.getPersonagem()));
             this.getPersonagem().getEstado().verificarAlteracaoEstado();
 

@@ -8,7 +8,14 @@ import ComportamentosPersonagens.Strategy.Pular;
  */
 
 public class PuloBaixo implements Pular{
+    private static PuloBaixo instancia = new PuloBaixo();
 
+    private PuloBaixo() {}
+
+    public static PuloBaixo getInstancia() {
+        return instancia;
+    }
+    
     @Override
     public void pular() {
         System.out.println("Pulo baixo.");

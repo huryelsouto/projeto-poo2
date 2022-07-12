@@ -14,8 +14,8 @@ public class EstadoNormal extends EstadoPersonagem {
 
     public EstadoNormal(Personagem per) {
         super(per);
-        this.getPersonagem().setAtaque(new AtaqueMedio());
-        this.getPersonagem().setCorrida(new CorridaMedia());
+        this.getPersonagem().setAtaque(AtaqueMedio.getInstancia());
+        this.getPersonagem().setCorrida(CorridaMedia.getInstancia());
 
     }
 

@@ -14,8 +14,8 @@ public class EstadoPerigo extends EstadoPersonagem {
 
     public EstadoPerigo(Personagem per) {
         super(per);
-        this.getPersonagem().setAtaque(new AtaqueFraco());
-        this.getPersonagem().setCorrida(new CorridaDevagar());
+        this.getPersonagem().setAtaque(AtaqueFraco.getInstancia());
+        this.getPersonagem().setCorrida(CorridaDevagar.getInstancia());
 
     }
 

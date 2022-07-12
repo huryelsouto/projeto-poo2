@@ -4,19 +4,23 @@ import ComportamentosPersonagens.Strategy.Atacar;
 
 /**
  *
- * Huryel Souto Costa - 12011BCC022
+ * Huryel Souto Costa - 12011BCC022 
  * Tiago da Silva e Souza Pinto - 12011BCC001
  */
+public class AtaqueForte extends Atacar {
+    private static AtaqueForte instancia = new AtaqueForte();
 
-public class AtaqueForte extends Atacar{
-
-    public AtaqueForte() {
+    private AtaqueForte() {
         setValorAtaque(30);
+    }
+
+    public static AtaqueForte getInstancia() {
+        return instancia;
     }
 
     @Override
     public void atacar() {
-        System.out.println("Ataque forte: " + getValorAtaque()); 
+        System.out.println("Ataque forte: " + getValorAtaque());
     }
-    
+
 }

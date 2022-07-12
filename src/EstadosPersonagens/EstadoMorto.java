@@ -9,7 +9,7 @@ import Context.Personagem;
  */
 
 public class EstadoMorto extends EstadoPersonagem{
-    
+
     public EstadoMorto(Personagem per){
         super(per);
     }

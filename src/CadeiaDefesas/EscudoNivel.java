@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CadeiaEscudos;
+package CadeiaDefesas;
 
 import Context.Personagem;
 
@@ -13,23 +13,23 @@ import Context.Personagem;
  * Tiago da Silva e Souza Pinto - 12011BCC001
  */
 
-public class EscudoNivel extends Escudo {
-    int defesa;
+public class EscudoNivel extends Defesa {
+    int valorDefesa;
 
-    public EscudoNivel(int defesa) {
-        this.defesa = defesa;
+    public EscudoNivel(int valorDefesa) {
+        this.valorDefesa = valorDefesa;
     }
     
     @Override
     public int processaDano(int dano){
         if (getSucessor() == null) {
-            return (dano - defesa);
+            return (dano - valorDefesa);
         }
         
         if (dano <= 0){
            return getSucessor().processaDano(0);
         } else {
-           return getSucessor().processaDano(dano - defesa);
+           return getSucessor().processaDano(dano - valorDefesa);
         }
     }
 }

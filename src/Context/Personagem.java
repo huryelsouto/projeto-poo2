@@ -1,6 +1,6 @@
 package Context;
 
-import CadeiaEscudos.Escudo;
+import CadeiaDefesas.Defesa;
 import ComportamentosPersonagens.Strategy.Atacar;
 import ComportamentosPersonagens.Strategy.Correr;
 import ComportamentosPersonagens.Strategy.Pular;
@@ -19,14 +19,14 @@ public abstract class Personagem {
     private Pular pulo;
     private int nivelEnergia;
     private EstadoPersonagem estado;
-    private Escudo escudo;
+    private Defesa defesa;
 
-    public Escudo getEscudo() {
-        return escudo;
+    public Defesa getDefesa() {
+        return defesa;
     }
 
-    public void setEscudo(Escudo escudo) {
-        this.escudo = escudo;
+    public void setDefesa(Defesa escudo) {
+        this.defesa = escudo;
     }
 
     public void setAtaque(Atacar a) {
@@ -82,8 +82,8 @@ public abstract class Personagem {
     }
     
     public void perdeNivelEnergia(int valorPerda){
-        if (this.getEscudo() != null){
-            valorPerda = this.getEscudo().processaDano(valorPerda);
+        if (this.getDefesa() != null){
+            valorPerda = this.getDefesa().processaDano(valorPerda);
         }
         
         this.setNivelEnergia(this.getNivelEnergia() - valorPerda);
@@ -95,12 +95,12 @@ public abstract class Personagem {
         this.getEstado().verificarAlteracaoEstado();
     }
     
-    public void pegaEscudo(Escudo novoEscudo){
-        if (this.getEscudo() == null){
-            this.setEscudo(novoEscudo);
+    public void pegaEscudo(Defesa novoEscudo){
+        if (this.getDefesa() == null){
+            this.setDefesa(novoEscudo);
         } else {
-            Escudo aux = this.getEscudo();
-            // percorre a cadeia de escudos até chegar no último escudo
+            Defesa aux = this.getDefesa();
+            // percorre a cadeia de escudos até chegar no último defesa
             // e então adicionar um novo ao final
             while (aux.getSucessor() != null) {                
                 aux = aux.getSucessor();
@@ -110,17 +110,17 @@ public abstract class Personagem {
     }
     
     public void perdeEscudo(){
-        if (this.getEscudo() == null){
+        if (this.getDefesa() == null){
             return;
         }
         
-        if (this.getEscudo().getSucessor() == null){
-            this.setEscudo(null);
+        if (this.getDefesa().getSucessor() == null){
+            this.setDefesa(null);
             return;
         }
         
-        // nesse caso o personagem tem um escudo e esse escudo tem sucessor
-        this.setEscudo(this.getEscudo().getSucessor());
+        // nesse caso o personagem tem um defesa e esse defesa tem sucessor
+        this.setDefesa(this.getDefesa().getSucessor());
     }
 
 }

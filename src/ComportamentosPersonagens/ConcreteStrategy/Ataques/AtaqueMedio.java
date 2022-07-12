@@ -9,9 +9,14 @@ import ComportamentosPersonagens.Strategy.Atacar;
  */
 
 public class AtaqueMedio extends Atacar{
+    private static AtaqueMedio instancia = new AtaqueMedio();
 
-    public AtaqueMedio() {
-       setValorAtaque(20);
+    private AtaqueMedio() {
+        setValorAtaque(20);
+    }
+
+    public static AtaqueMedio getInstancia() {
+        return instancia;
     }
 
     @Override
